@@ -8,3 +8,4 @@ current issues being addressed.
 3. needs to use volitilityL and volitilityH to create a trading stoploss 
 4. figuring out a non crypto public market api and banking api.
 5. delete some comments that are just my thoughts on what I *might* do in v5 
+6. after completely fixing all code convert it all to c++ and add api's
