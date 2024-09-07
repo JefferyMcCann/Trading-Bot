@@ -1,0 +1,110 @@
+// this will be my new attempt at making my standard deviation based trading bot work with an api. webulls api uses http
+// trailing stoploss supported by api, real time data requires a subscription
+
+// webull api functions
+
+function accountBal(){
+
+}
+
+
+function orderBuy(){ // limit buy, sets amount of shares, price for purchase at current
+
+}
+
+
+function orderSell(){ // limit sell, sets amount of shares, price for purchase at current
+
+}
+
+function liquidityBuy(){ // market buy, used for riskier high swing stocks to instantly trade at current mv
+
+}
+
+function liquiditySell(){ //market sell
+
+}
+
+function orderCancel(){
+
+}
+
+function orderModify(){
+
+}
+
+function stockQuery(){ // same as currentprice from last algo
+
+}
+
+function querySymbol(){ // holds value of stock symbol we want to trade for the stock query function. user defined
+
+}
+
+function posInfo(){ // full info for account positions
+
+}
+
+function lastPrice(){
+
+}
+
+
+
+// algorithm functions
+
+
+function volitilityH(){ // need to add a data structure to hold enough data to figure out the average high, or find an api that can give that data already
+
+}
+
+function volitilityL(){ // same as volH just lows
+
+
+}
+
+function timeperiod(){ // user settings for average, upon which volH and L are calculated from with the same timeperiod
+
+
+}
+
+function average(){ // shows average 24hr price, or average price for user set time period
+
+
+}
+
+
+
+
+function buySignal(){
+    let data = variables();
+    if(data.currentPrice > data.volitilityH){
+        if(data.currentPrice < data.lastPrice){
+            buy();
+        }else{
+            console.log('still rising');
+        }
+    }
+}
+
+function sellSignal(){
+    let data = variables();
+
+    if(data.currentPrice < data.volitilityH){
+        if(data.currentPrice > data.lastPrice){//stoploss start, should make more complex. should be an if and statement
+            sell();
+        }else{
+            console.log('still falling');
+        }
+    }
+}
+
+
+
+
+
+// main function that runs algorithm functions and webull functions together too actually trade
+
+main(){
+
+}
