@@ -1,0 +1,60 @@
+// this will be my new attempt at making my standard deviation based trading bot work with an api. webulls api uses http
+// trailing stoploss supported by api, real time data requires a subscription
+
+// webull api functions
+                                                        function accountBal(){
+                                                        }
+
+
+function orderBuy(){ // limit buy, sets amount of shares, price for purchase at current
+
+}
+
+
+function orderSell(){ // limit sell, sets amount of shares, price for purchase at current
+
+}
+
+function liquidityBuy(){ // market buy, used for riskier high swing stocks to instantly trade at current mv
+
+}
+
+function liquiditySell(){ //market sell
+
+}
+
+function orderCancel(){
+
+}
+
+function orderModify(){
+
+}
+
+function stockQuery(){
+
+}
+
+function querySymbol(){ // holds value of stock symbol we want to trade for the stock query function. user defined
+
+}
+
+function posInfo(){ // full info for account positions
+
+}
+
+
+// algorithm functions
+
+
+function
+
+
+
+
+
+// main function that runs algorithm functions and webull functions together too actually trade
+
+main(){
+
+}
